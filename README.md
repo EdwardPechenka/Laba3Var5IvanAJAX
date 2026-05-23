@@ -52,7 +52,7 @@
 ### Шаг 4. Запуск
 Запусти проект (или перезапусти OpenServer, чтобы он увидел новую папку). Открой браузер и перейди по локальному адресу проекта: `http://custintdb.local`.
 
-<img width="549" height="235" alt="image" src="https://github.com/user-attachments/assets/61de263d-05a6-4ddb-911c-bc54b3565551" />
+<img width="565" height="263" alt="image" src="https://github.com/user-attachments/assets/444320cd-6826-4e2e-a674-cc8fa43337dc" />
 
 
 Также просмотри, чтобы в настройках OpenServer у тебя стояли эти версии PHP и MySQL:
