@@ -33,7 +33,8 @@
 4. Выбери файл базы данных интернет-магазина `lb_pdo_goods.sql` (он лежит в папке с проектом) и нажми **Import**.
 База данных `lb_pdo_goods` и все таблицы с товарами, категориями и производителями создадутся автоматически.
 
-<img width="1624" height="771" alt="image" src="https://github.com/user-attachments/assets/4848d2e3-b9e0-4a3e-9eab-83b3efd0e76c" />
+<img width="1112" height="432" alt="image" src="https://github.com/user-attachments/assets/1329cc81-5b62-406d-9369-bcc0e7f08478" />
+
 
 
 ### Шаг 3. Настройка подключения (db.php)
