@@ -1,7 +1,4 @@
-# Инструкция по запуску Лабораторной работы (AJAX + Fetch API)
-
-**Выполнил:** студент группы Гунько Іван Дмитрович  
-**Варіант:** №5 (Товари в інтернет-магазині)
+<img width="887" height="617" alt="image" src="https://github.com/user-attachments/assets/52885f10-3c01-4003-b9f4-69714e198afc" /># Инструкция по запуску Лабораторной работы (AJAX + Fetch API)
 
 Чтобы всё работало корректно, выполни эти 5 простых шагов.
 
@@ -12,11 +9,13 @@
 * Если у тебя старая версия OpenServer (5.x), это папка `OSPanel\domains`.
 * Если новая (6.0), это папка `OSPanel\home`.
 
-<img width="757" height="522" alt="image" src="https://github.com/user-attachments/assets/c4237131-f4f9-4e9f-aa70-35c90068e471" />
+<img width="1173" height="463" alt="image" src="https://github.com/user-attachments/assets/7e582dee-4c3f-4334-a3aa-2c83443e2e19" />
+
 
 * Здесь не забудь создать папку `custintdb.local`, это обязательно, и закинь туда все наши файлы (`index.php`, `vendor_items.php`, `category_items.php`, `price_items.php`, `db.php`, `.osp/project.ini`):
 
-<img width="1173" height="432" alt="image" src="https://github.com/user-attachments/assets/b8293860-83b0-441e-b686-a0f6ee29cfaf" />
+На всякий, если что-то сделаешь с файлом project.ini:
+<img width="1274" height="372" alt="image" src="https://github.com/user-attachments/assets/d783ce61-4443-43cf-92bd-60db1ba58e8f" />
 
 
 ### Шаг 2. Загрузка базы данных (ОБЯЗАТЕЛЬНО)
@@ -52,6 +51,9 @@
 ### Шаг 4. Запуск
 Запусти проект (или перезапусти OpenServer, чтобы он увидел новую папку). Открой браузер и перейди по локальному адресу проекта: `http://custintdb.local`.
 
+<img width="549" height="235" alt="image" src="https://github.com/user-attachments/assets/61de263d-05a6-4ddb-911c-bc54b3565551" />
+
+
 Также просмотри, чтобы в настройках OpenServer у тебя стояли эти версии PHP и MySQL:
 
 <img width="419" height="174" alt="image" src="https://github.com/user-attachments/assets/e6fa492f-2214-459c-b6b7-9c1c1157d72d" />
@@ -63,13 +65,19 @@
 Пройдись по всем трем запросам. Главная фишка этой лабораторной — **страница не перезагружается при отправке форм**, а данные мгновенно подгружаются в блок результатов:
 
 1. **Поиск товаров по производителю (Формат TEXT):** Запрос отправляется через `XMLHttpRequest`, сервер возвращает готовый HTML-список товаров.
-<img width="441" height="183" alt="image" src="https://github.com/user-attachments/assets/5b063b1b-87c3-4f2c-bebd-ee086b4ed4b9" />
+<img width="887" height="617" alt="image" src="https://github.com/user-attachments/assets/6400d807-4d61-429a-a97a-f185ac4eb747" />
+
+<img width="796" height="554" alt="image" src="https://github.com/user-attachments/assets/1a704066-9706-4f34-bb25-a6b8d68a0be1" />
 
 2. **Поиск товаров по категории (Формат XML):** Запрос идет через `XMLHttpRequest`, сервер возвращает структурированный XML-документ, который JavaScript парсит на стороне клиента и выводит на экран.
-<img width="463" height="193" alt="image" src="https://github.com/user-attachments/assets/f8c42dde-655e-4def-82f3-c0cebb22e656" />
+
+<img width="783" height="570" alt="image" src="https://github.com/user-attachments/assets/35c2dd79-9dc0-4273-b469-2be5650eab47" />
+
+<img width="723" height="645" alt="image" src="https://github.com/user-attachments/assets/602a4dbe-57de-4488-b9a4-644e6d525b61" />
+
 
 3. **Фильтрация по цене (Формат JSON + Fetch API):** Используется современный метод `fetch()`. Сервер возвращает JSON-строку, которая десериализуется в JS-массив объектов для вывода товаров в выбранном диапазоне цен.
-<img width="556" height="259" alt="image" src="https://github.com/user-attachments/assets/8ac9fc87-d37e-4f00-b0b7-eff0e1fb558c" />
+<img width="771" height="649" alt="image" src="https://github.com/user-attachments/assets/32a20027-67a9-4acd-b10e-7fd76ed88679" />
 
 ---
 
