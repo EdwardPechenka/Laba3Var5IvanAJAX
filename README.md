@@ -1,4 +1,4 @@
-<img width="887" height="617" alt="image" src="https://github.com/user-attachments/assets/52885f10-3c01-4003-b9f4-69714e198afc" /># Инструкция по запуску Лабораторной работы (AJAX + Fetch API)
+# Инструкция по запуску Лабораторной работы (AJAX + Fetch API)
 
 Чтобы всё работало корректно, выполни эти 5 простых шагов.
 
